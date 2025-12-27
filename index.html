@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Yeasir Arafat | Electrical Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-slate-900">M.Y. Arafat<span class="text-blue-600">.</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition">Projects</a>
+                    <a href="#research" class="text-slate-600 hover:text-blue-600 font-medium transition">Research</a>
+                    <a href="#contact" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition shadow-sm">Contact Me</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Projects</a>
+                <a href="#research" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Research</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 font-bold hover:bg-slate-50">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Home (Landing Page) -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white pt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                Md. Yeasir Arafat
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-300 font-light mb-6">
+                Electrical Engineering Student | Power Electronics | Renewable Energy
+            </p>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                "Final-year Electrical Engineering student working on high-efficiency DC-DC converters and AI-based MPPT for solar PV systems."
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-500 hover:-translate-y-0.5 transition-all duration-200">
+                    View Projects
+                </a>
+                <a href="#" onclick="alert('CV Download functionality would go here! (Using your uploaded PDF)')" class="px-8 py-3 bg-transparent border border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-200">
+                    <i class="fas fa-download mr-2"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        I am an Electrical & Electronic Engineering student at Green University of Bangladesh, deeply passionate about Power Electronics and Renewable Energy systems. My academic journey has been defined by a strong theoretical foundation and practical application in circuit design and simulation.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-bold text-slate-900">Degree:</span> 
+                                <span class="text-slate-600">B.Sc. in Electrical & Electronic Engineering</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-university text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-bold text-slate-900">University:</span> 
+                                <span class="text-slate-600">Green University of Bangladesh</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-microchip text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-bold text-slate-900">Current Focus:</span> 
+                                <span class="text-slate-600">High-efficiency DC-DC converters & AI-based MPPT</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-blue-600 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-bold text-slate-900">Career Goal:</span> 
+                                <span class="text-slate-600">Research & Development in Renewable Energy Sector</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-xl transform rotate-3"></div>
+                    <!-- REPLACE THIS SECTION WITH YOUR IMAGE -->
+                    <img src="your-photo.jpg" alt="Md. Yeasir Arafat" class="relative rounded-xl shadow-2xl w-full h-auto object-cover aspect-[4/3]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Skills -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Technical Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-blue-600">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-blue-600">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Core Technical</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 text-sm mr-2"></i> Power Electronics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 text-sm mr-2"></i> DC-DC Converters</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 text-sm mr-2"></i> MPPT Algorithms</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 text-sm mr-2"></i> Solar PV Systems</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 text-sm mr-2"></i> Control Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Software Skills -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-cyan-500">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-6 text-cyan-600">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Software & Simulation</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-500 text-sm mr-2"></i> MATLAB / Simulink</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-500 text-sm mr-2"></i> Proteus 8.17</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-500 text-sm mr-2"></i> PSpice</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-500 text-sm mr-2"></i> MS Office Suite</li>
+                        <li class="flex items-center"><i class="fas fa-check text-cyan-500 text-sm mr-2"></i> Adobe Photoshop/Canva</li>
+                    </ul>
+                </div>
+
+                <!-- Programming Skills -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-indigo-600">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 text-indigo-600">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Programming</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-500 text-sm mr-2"></i> MATLAB Scripting</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-500 text-sm mr-2"></i> C Language</li>
+                        <li class="flex items-center"><i class="fas fa-check text-indigo-500 text-sm mr-2"></i> Embedded C (Basic)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4 text-center">Key Projects</h2>
+            <p class="text-slate-600 text-center mb-12 max-w-2xl mx-auto">Highlighting my work in Power Electronics and DSP.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col">
+                    <!-- Image Frame -->
+                    <div class="p-6 pb-0">
+                        <div class="border-2 border-slate-100 border-dashed p-1 rounded-lg">
+                            <div class="relative overflow-hidden aspect-video bg-slate-100 rounded-md">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x400/e2e8f0/475569?text=MPPT+System+Diagram" alt="MPPT Project" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">AI-Based MPPT for Solar PV</h3>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full h-fit">Thesis</span>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            Designed and simulated an intelligent Maximum Power Point Tracking (MPPT) system using Fuzzy Logic control to optimize solar panel efficiency under partial shading conditions.
+                        </p>
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Outcome:</span>
+                            <span class="text-sm text-slate-700 block">Improved tracking efficiency by 15% compared to traditional P&O algorithms.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">MATLAB</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Simulink</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Fuzzy Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col">
+                    <!-- Image Frame -->
+                    <div class="p-6 pb-0">
+                        <div class="border-2 border-slate-100 border-dashed p-1 rounded-lg">
+                            <div class="relative overflow-hidden aspect-video bg-slate-100 rounded-md">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x400/e2e8f0/475569?text=Buck-Boost+Circuit" alt="Buck-Boost Converter" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">High-Efficiency Buck-Boost Converter</h3>
+                            <span class="px-3 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded-full h-fit">Hardware/Sim</span>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            Developed a non-inverting synchronous buck-boost converter capable of maintaining stable output voltage despite wide input variations.
+                        </p>
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Outcome:</span>
+                            <span class="text-sm text-slate-700 block">Achieved 92% efficiency at full load conditions.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">PSpice</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">PCB Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col">
+                    <!-- Image Frame -->
+                    <div class="p-6 pb-0">
+                        <div class="border-2 border-slate-100 border-dashed p-1 rounded-lg">
+                            <div class="relative overflow-hidden aspect-video bg-slate-100 rounded-md">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x400/e2e8f0/475569?text=Inverter+Setup" alt="Inverter Project" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">12V DC to 220V AC Inverter</h3>
+                            <span class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-full h-fit">Hardware</span>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            Implementation of a Push-Pull topology inverter for household backup power, focusing on minimizing harmonic distortion.
+                        </p>
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Outcome:</span>
+                            <span class="text-sm text-slate-700 block">Successful load testing with 100W incandescent bulb.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Proteus</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Soldering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-white rounded-xl border border-slate-200 hover:border-blue-500 transition-colors duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col">
+                    <!-- Image Frame -->
+                    <div class="p-6 pb-0">
+                        <div class="border-2 border-slate-100 border-dashed p-1 rounded-lg">
+                            <div class="relative overflow-hidden aspect-video bg-slate-100 rounded-md">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x400/e2e8f0/475569?text=DSP+Waveform" alt="DSP Project" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Audio Noise Cancellation</h3>
+                            <span class="px-3 py-1 bg-orange-50 text-orange-700 text-xs font-semibold rounded-full h-fit">DSP</span>
+                        </div>
+                        <p class="text-slate-600 mb-4 text-sm">
+                            Designed FIR and IIR filters using MATLAB to remove high-frequency noise from recorded audio signals.
+                        </p>
+                        <div class="mb-4">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Outcome:</span>
+                            <span class="text-sm text-slate-700 block">Cleaned audio signal with Signal-to-Noise Ratio (SNR) improved by 12dB.</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-100">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">MATLAB</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Research / Publications -->
+    <section id="research" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Research & Publications</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border-l-4 border-blue-600 p-8">
+                <div class="space-y-8">
+                    <!-- Paper 1 -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-file-alt text-blue-600 text-xl"></i>
+                            <h3 class="text-xl font-bold text-slate-900">IEEE Conference Paper</h3>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-bold rounded-full">Under Review</span>
+                        </div>
+                        <p class="text-lg font-medium text-slate-800 mb-2">"Performance Analysis of Fuzzy Logic based MPPT for PV Systems under Partial Shading"</p>
+                        <p class="text-slate-600 text-sm">Submitted to: <span class="font-medium">International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT)</span></p>
+                        <p class="text-slate-500 text-sm mt-1">Status: Under Review | Year: 2025</p>
+                    </div>
+                    
+                    <hr class="border-slate-100">
+                    
+                    <!-- Thesis -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <i class="fas fa-book text-blue-600 text-xl"></i>
+                            <h3 class="text-xl font-bold text-slate-900">Undergraduate Thesis</h3>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-bold rounded-full">Completed</span>
+                        </div>
+                        <p class="text-lg font-medium text-slate-800 mb-2">"Design and Simulation of AI-Based MPPT Controller for Efficient Solar Energy Harvesting"</p>
+                        <p class="text-slate-600 text-sm">Supervisor: <span class="font-medium">Dr. Md. Fayzur Rahman</span></p>
+                        <p class="text-slate-500 text-sm mt-1">Green University of Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Education -->
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+             <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Education</h2>
+             
+             <div class="space-y-8">
+                 <!-- Degree -->
+                 <div class="flex flex-col md:flex-row bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-100">
+                     <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                         <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                             <i class="fas fa-university text-2xl"></i>
+                         </div>
+                     </div>
+                     <div>
+                         <h3 class="text-xl font-bold text-slate-900">B.Sc. in Electrical & Electronic Engineering</h3>
+                         <p class="text-blue-600 font-medium">Green University of Bangladesh</p>
+                         <p class="text-sm text-slate-500 mt-1">Expected Graduation: 2025</p>
+                         <p class="mt-3 text-slate-600 text-sm"><span class="font-bold text-slate-900">CGPA:</span> 3.74 / 4.00</p>
+                         <p class="mt-2 text-slate-500 text-sm">Relevant Coursework: Power Electronics, Control Systems, DSP, Energy Conversion.</p>
+                     </div>
+                 </div>
+
+                 <!-- HSC -->
+                 <div class="flex flex-col md:flex-row bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-100 opacity-90">
+                     <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                         <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500">
+                             <i class="fas fa-school text-2xl"></i>
+                         </div>
+                     </div>
+                     <div>
+                         <h3 class="text-lg font-bold text-slate-900">Higher Secondary School Certificate (H.S.C)</h3>
+                         <p class="text-slate-600 font-medium">Dania College, Dhaka</p>
+                         <p class="text-sm text-slate-500 mt-1">Passing Year: 2019</p>
+                         <p class="mt-1 text-slate-600 text-sm">GPA: 4.00 / 5.00 (Science Group)</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- 7. Certifications / Training -->
+    <section id="certifications" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4 text-center">Certifications & Training</h2>
+            <p class="text-slate-600 text-center mb-12 max-w-2xl mx-auto">Verified credentials and technical workshops attended during my academic career.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Certificate 1: Computer Training -->
+                <div class="flex flex-col items-center">
+                    <div class="group relative w-full bg-white p-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
+                        <!-- Decorative Frame Border -->
+                        <div class="border-2 border-slate-100 border-dashed p-1">
+                            <div class="relative overflow-hidden aspect-[4/3] bg-slate-100">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x450/e2e8f0/475569?text=Certificate+Image" alt="Computer Training Certificate" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <h3 class="text-lg font-bold text-slate-900">Computer Training</h3>
+                        <p class="text-sm text-blue-600 font-medium">Youth & Social Development Center</p>
+                        <p class="text-xs text-slate-500 mt-1">6-Month Course (Office Applications)</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: MATLAB -->
+                <div class="flex flex-col items-center">
+                    <div class="group relative w-full bg-white p-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
+                        <div class="border-2 border-slate-100 border-dashed p-1">
+                            <div class="relative overflow-hidden aspect-[4/3] bg-slate-100">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x450/e2e8f0/475569?text=MATLAB+Certificate" alt="MATLAB Certificate" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <h3 class="text-lg font-bold text-slate-900">MATLAB for Power Electronics</h3>
+                        <p class="text-sm text-blue-600 font-medium">Online Certification</p>
+                        <p class="text-xs text-slate-500 mt-1">Simulink & DC-DC Converters</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: Workshop -->
+                <div class="flex flex-col items-center">
+                    <div class="group relative w-full bg-white p-3 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
+                         <div class="border-2 border-slate-100 border-dashed p-1">
+                            <div class="relative overflow-hidden aspect-[4/3] bg-slate-100">
+                                <!-- REPLACE SRC WITH YOUR IMAGE -->
+                                <img src="https://placehold.co/600x450/e2e8f0/475569?text=Workshop+Certificate" alt="Workshop Certificate" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center">
+                        <h3 class="text-lg font-bold text-slate-900">Power Electronics Workshop</h3>
+                        <p class="text-sm text-blue-600 font-medium">University Seminar</p>
+                        <p class="text-xs text-slate-500 mt-1">PCB Design & Soldering</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Let's Connect</h2>
+            <p class="text-slate-600 mb-10 max-w-xl mx-auto">I am currently available for research collaborations and entry-level engineering roles. Feel free to reach out.</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:yeasirarafat941@gmail.com" class="flex items-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition group">
+                    <i class="fas fa-envelope text-2xl text-slate-400 group-hover:text-blue-600 mr-4 transition-colors"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase tracking-wide font-bold">Email Me</span>
+                        <span class="block text-slate-900 font-medium">yeasirarafat941@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="tel:+8801641271224" class="flex items-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl hover:border-green-500 hover:bg-green-50 transition group">
+                    <i class="fas fa-phone text-2xl text-slate-400 group-hover:text-green-600 mr-4 transition-colors"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase tracking-wide font-bold">Call Me</span>
+                        <span class="block text-slate-900 font-medium">+880 1641-271224</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-700 hover:bg-blue-50 transition group">
+                    <i class="fab fa-linkedin text-2xl text-slate-400 group-hover:text-blue-700 mr-4 transition-colors"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase tracking-wide font-bold">LinkedIn</span>
+                        <span class="block text-slate-900 font-medium">Connect on LinkedIn</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl hover:border-blue-600 hover:bg-blue-50 transition group">
+                    <i class="fab fa-facebook text-2xl text-slate-400 group-hover:text-blue-600 mr-4 transition-colors"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase tracking-wide font-bold">Facebook</span>
+                        <span class="block text-slate-900 font-medium">Follow on Facebook</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl hover:border-slate-900 hover:bg-slate-100 transition group">
+                    <i class="fab fa-x-twitter text-2xl text-slate-400 group-hover:text-slate-900 mr-4 transition-colors"></i>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-500 uppercase tracking-wide font-bold">X / Twitter</span>
+                        <span class="block text-slate-900 font-medium">Follow on X</span>
+                    </div>
+                </a>
+            </div>
+
+            <footer class="mt-20 pt-8 border-t border-slate-100 text-slate-400 text-sm">
+                <p>&copy; 2025 Md. Yeasir Arafat. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
